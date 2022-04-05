@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home</title>
+    <link rel="stylesheet" href="/html/try.css">
+    <script src="https://kit.fontawesome.com/b7b433d744.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="header">
+        <div class="image">
+            <img src="/html/img/svkm logo.png" alt="">
+        </div>
+        <div class="head">
+            <h5>SHRI VILE PARLE KELVANI MANDAL'S</h5>
+            <h3>SHRI BHAGHUBHAI MAFATLAL POLYTECHNIC</h3>
+            <h3>CHEMICAL ENGINEERING DEPARTMENT</h3>
+        </div>
+        <div class="image">
+            <img src="/html/img/WhatsApp Image 2022-02-13 at 12.59.08 PM.png" alt="">
+        </div>
+    </div>
+    <div class="topnav dropdown" id="navbar">
+        <a href="/html/home/home1.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">Course
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+                <div class="dropdown1">
+                    <a href="">PCWD</a>
+                </div>
+                <div class="dropdown1">
+                    <a href="/html/home/tioc.html">TIOC</a> 
+                </div>
+                <div class="dropdown1">
+                    <a href="/html/home/cre.html">CRE</a>
+                </div>
+                <div class="dropdown1">
+                    <a href="">PCWD</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="leftcolumn">
+            <div class="card" >
+                <ol>
+                    <li><a href="/html/pcwd/pcwd-1-1.html">DISSOLVED OXYGEN</a></li><br>
+                    <li><a href="/html/pcwd/pcwd-2-1.html">CHEMICAL OXYGEN DEMAND - 1</a></li><br>
+                    <li><a href="/html/pcwd/pcwd-3-1.html">CHEMICAL OXYGEN DEMAND - 2 </a></li><br>
+                    <li><a href="/html/pcwd/pcwd-4-1.html">BIOLOGICAL OXYGEN DEMAND-1</a></li><br>
+                    <li><a href="/html/pcwd/pcwd-5-1.html">BIOLOGICAL OXYGEN DEMAND-2</a></li><br>
+                    <li><a href="/html/pcwd/pcwd-6-1.html">CHLORIDE CONTENT </a></li><br>
+                    <li><a href="/html/pcwd/pcwd-7-1.html">CONCENTRATION OF SODIUM ION </a></li><br>
+                    <li><a href="/html/pcwd/pcwd-8-1.html">TURBIDITY</a></li><br>
+                    <li><a href="/html/pcwd/pcwd-9-1.html">HIGH VOLUME SAMPLER </a></li><br>
+                    <li><a href="/html/pcwd/pcwd-10-1.html">PHENOL CONTENT </a></li><br>
+                </ol>
+            </div>
+        </div>
+    </div><br><br><br><br><br>
+    <script>
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbtn')) {
+                var myDropdown = document.getElementById("myDropdown");
+                if (myDropdown.classList.contains('show')) {
+                    myDropdown.classList.remove('show');
+                }
+            }
+        }
+        /* When the user clicks on the button, 
+        toggle between hiding and showing the dropdown content */
+        function myFunction1() {
+            document.getElementById("myDropdown1").classList.toggle("show1");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function (e) {
+            if (!e.target.matches('.dropbtn1')) {
+                var myDropdown1 = document.getElementById("myDropdown1");
+                if (myDropdown1.classList.contains('show1')) {
+                    myDropdown1.classList.remove('show1');
+                }
+            }
+        }
+        window.onscroll = function () { scroll() };
+
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+
+        function scroll() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky")
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+
+</html>
